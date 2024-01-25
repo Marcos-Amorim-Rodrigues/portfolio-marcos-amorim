@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Marcos Amorim</title>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"></head>
+<body>
+  <section id="header-container">
+    <ul>
+    </ul>
+    <ul id="logo-ul">
+      <li><img src="./images/logotipo.png" height="40px" alt=""></li>
+    </ul>
+    <ul id="menu-items">
+      <a href="#presentation-container"><li class="menu-topic">Sobre mim</li></a>
+      <a href="#projects-container"><li class="menu-topic">Projetos</li></a>
+      <a href="#career-container"><li class="menu-topic">Jornada</li></a>
+      <a href="#contact-container"><li class="menu-topic">Contato</li></a>
+    </ul>
+  </section>
+  <section  id="intro-container">
+    <div></div>
+    <div>
+      <h1>Ajudando empresas a construírem produtos digitais de forma moderna e de alta qualidade.</h1>
+      <p>Uma mistura de Design, Desenvolvimento Frontend e habilidade profissional que vão destacar seu produto no mercado. </p>
+      <a href="#projects-container"><button type="submit">Conheça meu trabalho</button></a>
+    </div>
+    <div id="intro-photo">
+      <img src="./images/intro-image2.png" width="390px" alt="" id="image-sobreposta">
+      <img src="./images/intro-image.png" width="390px" alt="" id="image-absoluta">
+</div>
+  </section>
+  <section id="presentation-container">
+    <div id="box-presentation">
+      <div id="photo-presentation">
+        <img src="./images/presentation-photo.png" width="450px" alt="">
+      </div>
+      <div id="info-presentation">
+        <h4 style="color:#694fff">Quem sou?</h4>
+        <h1>Marcos Amorim</h1>
+        <h4>Frontend developer & UI Designer</h4>
+        <p>Meu nome é Marcos Amorim, sou graduando do curso de Sistemas de Informação, pela UNIMONTES - Universidade Estadual de Montes Claros. Tenho vasta experiência atuando em agências de Marketing Digital onde explorei e desenvolvi habilidades de UI & Web Designer.</p>
+        <div id="presentation-icons">
+          <a href="https://www.instagram.com/marcos_amorimr/" target="_blank"><div><img src="./images/icons/insta.png" alt=""></div></a>
+          <a href="https://github.com/Marcos-Amorim-Rodrigues" target="_blank"><div><img src="./images/icons/git.png" alt=""></div></a>
+          <a href="https://www.behance.net/marcos_amorimr" target="_blank"><div><img src="./images/icons/behance.png" alt=""></div></a>
+          <a href="https://www.linkedin.com/in/marcos-amorim-b01b791a7/" target="_blank"><div><img src="./images/icons/linkedin.png" alt=""></div></a>
+          <a href="mailto:marcos.amorim.rodr@gmail.com" target="_blank"><div><img src="./images/icons/mail.png" alt=""></div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects-container">
+    <div id="projects">
+      <h1>Projetos</h1>
+      <div onmousemove="mostrarBP()"><h3>Plataforma Brasil Paralelo</h3></div>
+      <div onmousemove="mostrarDT()"><h3>Do.This Seja mais produtivo</h3></div>
+      <div onmousemove="mostrarPT()"><h3>Portfólio pessoal de projetos</h3></div>
+      <div><h3>Novos projetos em breve...</h3></div>
+    </div>
+    <div id="description-project">
+      <div id="brasil-paralelo">
+        <div>
+          <h2>Plataforma Brasil Paralelo</h2>
+          <p>Este projeto foi uma recriação da plataforma de streaming Brasil Paralelo, onde utilizei elementos e inspirações da Netflix.</p>
+        </div>
+        <div class="plataform-photo" id="bp-photo"></div>
+        <div id="access-project">
+          <a href="https://github.com/Marcos-Amorim-Rodrigues/Streaming-platform-brasil-paralelo" target="_blank"><h3>Acessar o projeto!</h3></a>
+          <hr id="thread2" size="5" width="166px" color="#694fff" style="margin-top:6px">
+        </div>
+      </div>
+      <div id="do-this">
+        <div>
+          <h2>Do.This</h2>
+          <p>Esta plataforma foi desenvolvida com base na necessidade de manter uma organização de tarefas e contabilização de tempo de execução.</p>
+        </div>
+        <div class="plataform-photo" id="dt-photo"></div>
+        <div id="access-project">
+          <h3>Acessar o projeto!</h3>
+          <hr id="thread2" size="5" width="166px" color="#694fff" style="margin-top:6px">
+        </div>
+      </div>
+      <div id="portfolio">
+        <div>
+          <h2>Portfólio</h2>
+          <p>Esta página é exatamente a que você está acessando neste momento, onde registro minhas informações e projetos realizados.</p>
+        </div>
+        <div class="plataform-photo" id="pt-photo"></div>
+        <div id="access-project">
+          <h3>Acessar o projeto!</h3>
+          <hr id="thread2" size="5" width="166px" color="#694fff" style="margin-top:6px">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="career-container">
+    <div id="career-title">
+      <h1>Minha jornada</h1>
+    </div>
+    <div class="events" id="first-event" onmouseenter="animar(this.id)" onmouseleave="desanimar(this.id)">
+      <img id="img-first-event" src="./images/icon-study.png" width="55px" alt="">
+      <h3>Curso técnico de Informática para Internet</h3>
+      <h5>Jan/2015 - Dez/2017</h5>
+      <p>Durante o ensino médio, tive a oportunidade de realizar o curso técnico de informática para internet, onde conheci e criei minha base para a programação.</p>
+    </div>
+    <div class="events" id="second-event" onmousemove="animar(this.id)" onmouseleave="desanimar(this.id)">
+      <img id="img-second-event" src="./images/icon-school.png" width="55px" alt="">
+      <h3>Graduação em Sistemas de Informação</h3>
+      <h5>Mai/2017 - Incompleto</h5>
+      <p>Concluí seis períodos do curso de Sistemas de Informação pela Universidade Estadual de Montes Claros, onde pude solidificar minha base de conhecimentos.</p>
+    </div>
+    <div class="events" id="third-event" onmousemove="animar(this.id)" onmouseleave="desanimar(this.id)">
+      <img id="img-third-event" src="./images/icon-work.png" width="55px" alt="">
+      <h3>Estágio na agência Opportunity</h3>
+      <h5>Ago/2019 - Out/2020</h5>
+      <p>Estagiei como Designer Gráfico em uma agência de publicidade e propaganda avançando em meus conhecimentos de fundamentos do design e marketing digital.</p>
+    </div>
+    <div class="events" id="fourth-event" onmouseenter="animar(this.id)" onmouseleave="desanimar(this.id)">
+      <img id="img-fourth-event" src="./images/icon-ideia.png" width="55px" alt="">
+      <h3>Empreendimento na Mark8 Digital</h3>
+      <h5>Dez/2017 - Nov/2021</h5>
+      <p>Fundei uma agência com alguns amigos que compartilhavam o mesmo interesse por marketing, prestando serviços de gestão de tráfego e social media.</p>
+    </div>
+    <div class="events" id="fifth-event" onmousemove="animar(this.id)" onmouseleave="desanimar(this.id)">
+      <img id="img-fifth-event" src="./images/icon-din.png" width="55px" alt="">
+      <h3>Freelancer na Mkt4Edu</h3>
+      <h5>2018 - Menos de um ano</h5>
+      <p>Prestei alguns serviços como freelancer de Designer Gráfico, entregando edições de peças gráficas e adaptações de layouts diversos.</p>
+    </div>
+    <div class="events" id="sixth-event" onmousemove="animar(this.id)" onmouseleave="desanimar(this.id)">
+      <img id="img-sixth-event" src="./images/icon-pasta.png" width="55px" alt="">
+      <h3>Partner na Foco Marketing</h3>
+      <h5>Mai/2022 - Atual</h5>
+      <p>Fui convidado a ser co-fundador de uma agência de Marketing Digital, onde assumi a liderança do time de Gestão de Tráfego alcançando grandes conquistas em menos de dois anos.</p>
+    </div>
+  </section>
+  <section id="contact-container">
+    <div id="contact-left">
+      <img src="./images/marcos_pose6.webp" width="185px" alt="">
+      <h1>Fale comigo!</h1>
+      <hr id="thread2" size="5" width="166px" color="#694fff" style="margin-top:6px">
+      <p>Clique no botão abaixo para falar diretamente comigo pelo WhatsApp ou então clique em um dos cards a seguir, para me contatar através de outras plataformas.</p>
+      <a href="wa.me/5538988643915" target="_blank"><button>Contatar no WhatsApp</button></a>
+    </div>
+    <div id="contact-column">
+      <a href="mailto:marcos.amorim.rodr@gmail.com" target="_blank"><div id="mail-contact" class="contact-items">
+        <img src="./images/icons/mail.png" width="50px" alt="">
+      </div></a>
+      <a href="wa.me/5538988643915" target="_blank"><div id="whatsapp-contact" class="contact-items">
+        <img src="./images/icons/whatsapp.png" width="50px" alt="">
+      </div></a>
+      <a href="https://t.me/marcos_amorimr" target="_blank"><div id="telegram-contact" class="contact-items">
+        <img src="./images/icons/telegram.png" width="50px" alt="">
+      </div></a>
+      <a href="tel:+5538988643915" target="_blank"><div id="phone-contact" class="contact-items">
+        <img src="./images/icons/phone.png" width="50px" alt="">
+      </div></a>
+      <a href="https://www.instagram.com/marcos_amorimr/" target="_blank"><div id="instagram-contact" class="contact-items">
+        <img src="./images/icons/insta.png" width="50px" alt="">
+      </div></a>
+    </div>
+  </section>
+  <section id="rodape-container">
+    <p>Marcos Amorim // 2024 © Todos os direitos reservados.</p>
+  </section>
+  <script>
+    let bpDiv = document.getElementById("brasil-paralelo");
+    let dtDiv = document.getElementById("do-this");
+    let ptDiv = document.getElementById("portfolio"); 
+    function mostrarBP(){
+      bpDiv.style = "display:grid";
+      dtDiv.style = "display:none";
+      ptDiv.style = "display:none";
+    }
+    function mostrarDT(){
+      bpDiv.style = "display:none";
+      dtDiv.style = "display:grid";
+      ptDiv.style = "display:none";
+    }
+    function mostrarPT(){
+      bpDiv.style = "display:none";
+      dtDiv.style = "display:none";
+      ptDiv.style = "display:grid";
+    }
+    function animar(elementId){
+      let currentImg = document.getElementById(`img-${elementId}`);
+      currentImg.style = "animation: move 3s infinite";
+    }
+    function desanimar(elementId){
+      let currentImg = document.getElementById(`img-${elementId}`);
+      currentImg.style = "animation: move 1s linear";
+    }
+  </script>
+</body>
+</html>
