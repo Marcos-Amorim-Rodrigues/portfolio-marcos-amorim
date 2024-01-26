@@ -9,6 +9,17 @@
   scroll-behavior: smooth;
 }
 
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+html ::-webkit-scrollbar-thumb {
+
+  background: rgb(105, 79, 255);
+}
+html ::-webkit-scrollbar-track {
+  background: #F5F5F7;
+}
+
 a{
   text-decoration: none;
   color: inherit;
