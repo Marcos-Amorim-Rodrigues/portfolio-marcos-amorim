@@ -25,7 +25,7 @@
   </section>
   <section  id="intro-container">
     <div></div>
-    <div>
+    <div class="js-scroll">
       <h1>Ajudando empresas a construírem produtos digitais de forma moderna e de alta qualidade.</h1>
       <p>Uma mistura de Design, Desenvolvimento Frontend e habilidade profissional que vão destacar seu produto no mercado. </p>
       <a href="#projects-container"><button type="submit">Conheça meu trabalho</button></a>
@@ -37,10 +37,10 @@
   </section>
   <section id="presentation-container">
     <div id="box-presentation">
-      <div id="photo-presentation">
+      <div id="photo-presentation" class="js-scroll">
         <img src="./images/presentation-photo.png" width="450px" alt="">
       </div>
-      <div id="info-presentation">
+      <div id="info-presentation" class="js-scroll">
         <h4 style="color:#694fff">Quem sou?</h4>
         <h1>Marcos Amorim</h1>
         <h4>Frontend developer & UI Designer</h4>
@@ -56,14 +56,14 @@
     </div>
   </section>
   <section id="projects-container">
-    <div id="projects">
+    <div id="projects" class="js-scroll">
       <h1>Projetos</h1>
       <div onmousemove="mostrarBP()"><h3>Plataforma Brasil Paralelo</h3></div>
       <div onmousemove="mostrarDT()"><h3>Do.This Seja mais produtivo</h3></div>
       <div onmousemove="mostrarPT()"><h3>Portfólio pessoal de projetos</h3></div>
       <div><h3>Novos projetos em breve...</h3></div>
     </div>
-    <div id="description-project">
+    <div id="description-project" class="js-scroll">
       <div id="brasil-paralelo">
         <div>
           <h2>Plataforma Brasil Paralelo</h2>
@@ -99,7 +99,7 @@
       </div>
     </div>
   </section>
-  <section id="career-container">
+  <section id="career-container" class="js-scroll">
     <div id="career-title">
       <h1>Minha jornada</h1>
     </div>
@@ -140,19 +140,19 @@
       <p>Fui convidado a ser co-fundador de uma agência de Marketing Digital, onde assumi a liderança do time de Gestão de Tráfego alcançando grandes conquistas em menos de dois anos.</p>
     </div>
   </section>
-  <section id="contact-container">
+  <section id="contact-container" class="js-scroll">
     <div id="contact-left">
       <img src="./images/marcos_pose6.webp" width="185px" alt="">
       <h1>Fale comigo!</h1>
       <hr id="thread2" size="5" width="166px" color="#694fff" style="margin-top:6px">
       <p>Clique no botão abaixo para falar diretamente comigo pelo WhatsApp ou então clique em um dos cards a seguir, para me contatar através de outras plataformas.</p>
-      <a href="wa.me/5538988643915" target="_blank"><button>Contatar no WhatsApp</button></a>
+      <a href="https://wa.me/5538988643915" target="_blank"><button>Contatar no WhatsApp</button></a>
     </div>
     <div id="contact-column">
       <a href="mailto:marcos.amorim.rodr@gmail.com" target="_blank"><div id="mail-contact" class="contact-items">
         <img src="./images/icons/mail.png" width="50px" alt="">
       </div></a>
-      <a href="wa.me/5538988643915" target="_blank"><div id="whatsapp-contact" class="contact-items">
+      <a href="https://wa.me/5538988643915" target="_blank"><div id="whatsapp-contact" class="contact-items">
         <img src="./images/icons/whatsapp.png" width="50px" alt="">
       </div></a>
       <a href="https://t.me/marcos_amorimr" target="_blank"><div id="telegram-contact" class="contact-items">
@@ -197,5 +197,6 @@
       currentImg.style = "animation: move 1s linear";
     }
   </script>
+  <script type="module" src="js/script.js"></script>
 </body>
 </html>
