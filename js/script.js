@@ -1,3 +1,2 @@
 import animacaoScroll from "./animacaoScroll.js";
-
-animacaoScroll();
+import typingEffect from "./typingEffect.js";
