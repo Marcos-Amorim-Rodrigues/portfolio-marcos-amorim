@@ -9,7 +9,7 @@
   scroll-behavior: smooth;
 }
 
-#intro-container p::after {
+.intro-container p::after {
   display: inline-block;
   content: '';
   width: 2px;
@@ -83,7 +83,7 @@ h1{
   font-size: 1.8rem;
 }
 
-#header-container{
+.header-container{
   display: grid;
   grid-template-columns: 1fr 700px 350px 1fr;
   grid-template-rows: 50px;
@@ -96,18 +96,18 @@ h1{
   justify-content: space-between;
 }
 
-#intro-container{
+.intro-container{
   display: grid;
   grid-template-columns: 1fr 525px 525px 1fr;
   align-items: center;
   grid-template-rows: 80vh;
 }
 
-#intro-container h1{
+.intro-container h1{
   margin-bottom: 1rem;
 }
 
-#intro-container p{
+.intro-container p{
   margin-bottom: 1rem;
 }
 
@@ -131,7 +131,7 @@ button:hover{
   width: 250px;
 }
 
-#presentation-container{
+.presentation-container{
   display: grid;
   grid-template-columns: 1fr 1050px 1fr;
   align-items: center;
@@ -211,7 +211,7 @@ button:hover{
   margin: 10px;
 }
 
-#projects-container{
+.projects-container{
   background-color: #FFF;
   display: grid;
   grid-template-columns: 1fr 425px 625px 1fr;
@@ -324,7 +324,7 @@ hr{
   100%{ width:166px;}
 }
 
-#career-container{
+.career-container{
   display:grid;
   grid-template-columns: 1fr 350px 350px 350px 1fr;
   grid-template-rows: 100px 1fr 1fr;
@@ -394,6 +394,10 @@ hr{
   grid-row-start: 3;
 }
 
+.activo{
+  animation: move 3s infinite;
+}
+
 @keyframes move {
   0% {left:50%; transform: rotate(0);}
   35% {left:50%; transform: rotate(90deg);}
@@ -401,7 +405,7 @@ hr{
   100% {left:50%; transform: rotate(360deg);}
 }
 
-#contact-container{
+.contact-container{
   display: grid;
   grid-template-columns: 1fr 425px 625px 1fr;
   height: auto;
@@ -462,12 +466,12 @@ hr{
 }
 
 @media (max-width: 1050px){
-  #header-container{
+  .header-container{
     grid-template-columns: 100%;
     grid-template-rows: 30px;
     align-items: center;
   }
-  #header-container #logo-ul{
+  .header-container #logo-ul{
     display: grid;
     justify-content: center;
   }
@@ -476,7 +480,7 @@ hr{
     display: none;
   }
   
-  #intro-container{
+  .intro-container{
     grid-template-columns: 100%;
     grid-template-rows: auto;
     padding: 30px;
@@ -493,7 +497,7 @@ hr{
     margin-top: 30px;
   }
   
-  #presentation-container{
+  .presentation-container{
     display: grid;
     grid-template-columns: 1fr 100% 1fr;
     justify-content: center;
@@ -579,7 +583,7 @@ hr{
     margin: 10px;
   }
   
-  #projects-container{
+  .projects-container{
     background-color: #FFF;
     display: grid;
     grid-template-columns: 100%;
@@ -693,7 +697,7 @@ hr{
     100%{ width:166px;}
   }
   
-  #career-container{
+  .career-container{
     display:grid;
     grid-template-columns: 100%;
     grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -769,7 +773,7 @@ hr{
     100% {left:50%; transform: rotate(360deg);}
   }
   
-  #contact-container{
+  .contact-container{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto;

@@ -1,5 +1,5 @@
 function typingEffect(){
-    const texto = document.querySelector('#intro-container p');
+    const texto = document.querySelector('.intro-container p');
     const arrayTexto = texto.innerHTML.split('');
     let i = 0;
     texto.innerHTML = "";

@@ -10,20 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"></head>
 <body>
-  <section id="header-container">
+  <section class="header-container">
     <ul>
     </ul>
     <ul id="logo-ul">
       <li><img src="./images/logotipo.png" height="40px" alt=""></li>
     </ul>
     <ul id="menu-items">
-      <a href="#presentation-container"><li class="menu-topic">Sobre mim</li></a>
-      <a href="#projects-container"><li class="menu-topic">Projetos</li></a>
-      <a href="#career-container"><li class="menu-topic">Jornada</li></a>
-      <a href="#contact-container"><li class="menu-topic">Contato</li></a>
+      <a href="#sobre-mim"><li class="menu-topic">Sobre mim</li></a>
+      <a href="#projetos"><li class="menu-topic">Projetos</li></a>
+      <a href="#jornada"><li class="menu-topic">Jornada</li></a>
+      <a href="#contato"><li class="menu-topic">Contato</li></a>
     </ul>
   </section>
-  <section  id="intro-container">
+  <section  class="intro-container">
     <div></div>
     <div class="js-scroll">
       <h1>Ajudando empresas a construírem produtos digitais de forma moderna e de alta qualidade.</h1>
@@ -35,7 +35,7 @@
       <img src="./images/intro-image.png" width="390px" alt="" id="image-absoluta">
 </div>
   </section>
-  <section id="presentation-container">
+  <section class="presentation-container" id="sobre-mim">
     <div id="box-presentation">
       <div id="photo-presentation" class="js-scroll">
         <img src="./images/presentation-photo.png" width="450px" alt="">
@@ -55,7 +55,7 @@
       </div>
     </div>
   </section>
-  <section id="projects-container">
+  <section class="projects-container" id="projetos">
     <div id="projects" class="js-scroll">
       <h1>Projetos</h1>
       <div onmousemove="mostrarBP()"><h3>Plataforma Brasil Paralelo</h3></div>
@@ -99,7 +99,7 @@
       </div>
     </div>
   </section>
-  <section id="career-container" class="js-scroll">
+  <section id="jornada" class="career-container js-scroll">
     <div id="career-title">
       <h1>Minha jornada</h1>
     </div>
@@ -109,13 +109,13 @@
       <h5>Jan/2015 - Dez/2017</h5>
       <p>Durante o ensino médio, tive a oportunidade de realizar o curso técnico de informática para internet, onde conheci e criei minha base para a programação.</p>
     </div>
-    <div class="events" id="second-event" onmousemove="animar(this.id)" onmouseleave="desanimar(this.id)">
+    <div class="events" id="second-event" onmouseenter="animar(this.id)" onmouseleave="desanimar(this.id)">
       <img id="img-second-event" src="./images/icon-school.png" width="55px" alt="">
       <h3>Graduação em Sistemas de Informação</h3>
       <h5>Mai/2017 - Incompleto</h5>
       <p>Concluí seis períodos do curso de Sistemas de Informação pela Universidade Estadual de Montes Claros, onde pude solidificar minha base de conhecimentos.</p>
     </div>
-    <div class="events" id="third-event" onmousemove="animar(this.id)" onmouseleave="desanimar(this.id)">
+    <div class="events" id="third-event" onmouseenter="animar(this.id)" onmouseleave="desanimar(this.id)">
       <img id="img-third-event" src="./images/icon-work.png" width="55px" alt="">
       <h3>Estágio na agência Opportunity</h3>
       <h5>Ago/2019 - Out/2020</h5>
@@ -127,20 +127,20 @@
       <h5>Dez/2017 - Nov/2021</h5>
       <p>Fundei uma agência com alguns amigos que compartilhavam o mesmo interesse por marketing, prestando serviços de gestão de tráfego e social media.</p>
     </div>
-    <div class="events" id="fifth-event" onmousemove="animar(this.id)" onmouseleave="desanimar(this.id)">
+    <div class="events" id="fifth-event" onmouseenter="animar(this.id)" onmouseleave="desanimar(this.id)">
       <img id="img-fifth-event" src="./images/icon-din.png" width="55px" alt="">
       <h3>Freelancer na Mkt4Edu</h3>
       <h5>2018 - Menos de um ano</h5>
       <p>Prestei alguns serviços como freelancer de Designer Gráfico, entregando edições de peças gráficas e adaptações de layouts diversos.</p>
     </div>
-    <div class="events" id="sixth-event" onmousemove="animar(this.id)" onmouseleave="desanimar(this.id)">
+    <div class="events" id="sixth-event" onmouseenter="animar(this.id)" onmouseleave="desanimar(this.id)">
       <img id="img-sixth-event" src="./images/icon-pasta.png" width="55px" alt="">
       <h3>Partner na Foco Marketing</h3>
       <h5>Mai/2022 - Atual</h5>
       <p>Fui convidado a ser co-fundador de uma agência de Marketing Digital, onde assumi a liderança do time de Gestão de Tráfego alcançando grandes conquistas em menos de dois anos.</p>
     </div>
   </section>
-  <section id="contact-container" class="js-scroll">
+  <section id="contato" class="contact-container js-scroll">
     <div id="contact-left">
       <img src="./images/marcos_pose6.webp" width="185px" alt="">
       <h1>Fale comigo!</h1>
@@ -169,34 +169,8 @@
   <section id="rodape-container">
     <p>Marcos Amorim // 2024 © Todos os direitos reservados.</p>
   </section>
-  <script>
-    let bpDiv = document.getElementById("brasil-paralelo");
-    let dtDiv = document.getElementById("do-this");
-    let ptDiv = document.getElementById("portfolio"); 
-    function mostrarBP(){
-      bpDiv.style = "display:grid";
-      dtDiv.style = "display:none";
-      ptDiv.style = "display:none";
-    }
-    function mostrarDT(){
-      bpDiv.style = "display:none";
-      dtDiv.style = "display:grid";
-      ptDiv.style = "display:none";
-    }
-    function mostrarPT(){
-      bpDiv.style = "display:none";
-      dtDiv.style = "display:none";
-      ptDiv.style = "display:grid";
-    }
-    function animar(elementId){
-      let currentImg = document.getElementById(`img-${elementId}`);
-      currentImg.style = "animation: move 3s infinite";
-    }
-    function desanimar(elementId){
-      let currentImg = document.getElementById(`img-${elementId}`);
-      currentImg.style = "animation: move 1s linear";
-    }
-  </script>
+  <script type="text/javascript" src="js/projectsSelector.js"></script>
+  <script type="text/javascript" src="js/animacaoHoverCareer.js"></script>
   <script type="module" src="js/script.js"></script>
 </body>
 </html>
