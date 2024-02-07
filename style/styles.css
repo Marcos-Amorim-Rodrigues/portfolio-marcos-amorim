@@ -844,19 +844,23 @@ hr{
 .theme{
   background: #ececec;
   margin-top: 20px;
-  padding: 3px 10px 3px 10px;
+  padding: 3px 8px 3px 8px;
   border-radius: 15px;
   display:flex;
   align-items: center;
   justify-content: center;
 }
 
+.theme p{
+  font-size: 0.8rem;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 24px;
 }
 
 /* Hide default HTML checkbox */
@@ -882,8 +886,8 @@ hr{
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -912,4 +916,16 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.tooltip{
+  position: absolute;
+  z-index: 500;
+  background: white;
+  border: solid #f0f0f0 2px;
+  font-size: .775rem;
+  padding: .5rem;
+  color: rgb(105, 79, 255);
+  max-width: 150px;
+  border-radius: 15px;
 }
