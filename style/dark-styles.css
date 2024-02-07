@@ -48,7 +48,7 @@ html ::-webkit-scrollbar-thumb {
   background: rgb(105, 79, 255);
 }
 html ::-webkit-scrollbar-track {
-  background: #F5F5F7;
+  background: #111111;
 }
 
 a{
@@ -61,8 +61,8 @@ a{
 }
 
 body{
-  background-color: #F5F5F7;
-  color: rgb(83, 83, 83);
+  background-color: #111111;
+  color: rgb(255, 255, 255);
 }
 
 li{
@@ -141,9 +141,9 @@ button:hover{
 
 #box-presentation{
   height: auto;
-  background: #FFF;
+  background: #151515;
   grid-column-start: 2;
-  border: solid #f0f0f0 2px;
+  border: solid #242424 2px;
   border-radius: 15px;
   display: grid;
   grid-template-columns: 2.5% 47.5% 47.5% 2.5%;
@@ -154,7 +154,7 @@ button:hover{
   grid-column-start: 2;
   height: 87.5%;
   border-radius: 10px;
-  background: #F5F5F7;
+  background: #5a5a5a;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -177,7 +177,7 @@ button:hover{
 
 #info-presentation{
   padding: 5%;
-  background: #FFF;
+  background: #151515;
 }
 
 #info-presentation h1, h4, p{
@@ -192,9 +192,9 @@ button:hover{
 }
 
 #presentation-icons div{
-  background: #F5F5F7;
+  background: #151515;
   margin: 5px;
-  border: solid #f0f0f0 2px;
+  border: solid #242424 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,7 +212,7 @@ button:hover{
 }
 
 .projects-container{
-  background-color: #FFF;
+  background-color: #151515;
   display: grid;
   grid-template-columns: 1fr 425px 625px 1fr;
   padding-top: 5%;
@@ -230,7 +230,7 @@ button:hover{
 
 #projects div{
   height: 3.2rem;
-  border: solid #F5F5F7 2px;
+  border: solid #242424 2px;
   margin-top: 15px;
   border-radius: 8px;
   transition: 0.4s;
@@ -340,9 +340,9 @@ hr{
 
 .events{
   height: 300px;
-  background: #FFF;
+  background: #151515;
   margin: 15px;
-  border: solid #f0f0f0 2px;
+  border: solid #242424 2px;
   border-radius: 10px;
   padding: 20px;
   transition: 0.6s;
@@ -435,13 +435,13 @@ hr{
 }
 
 .contact-items{
-  background: #FFF;
+  background: #151515;
   width: 100px;
   height: 100px;
   display: grid;
   justify-content: center;
   align-items: center;
-  border: solid #f0f0f0 2px;
+  border: solid #242424 2px;
   border-radius: 8px;
 }
 
@@ -842,7 +842,7 @@ hr{
 }
 
 .theme{
-  background: #ececec;
+  background: #242424;
   margin-top: 20px;
   padding: 3px 10px 3px 10px;
   border-radius: 15px;
