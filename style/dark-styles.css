@@ -177,7 +177,6 @@ button:hover{
 
 #info-presentation{
   padding: 5%;
-  background: #151515;
 }
 
 #info-presentation h1, h4, p{
@@ -259,15 +258,15 @@ button:hover{
 }
 
 #bp-photo{
-  background-image: url("/images/project-bp.jpg");
+  background-image: url("/images/project-sushi.jpg");
 }
 
 #dt-photo{
-  background-image: url("/images/project-dothis.jpg");
+  background-image: url("/images/project-comunidade.jpg");
 }
 
 #pt-photo{
-  background-image: url("/images/project-portfolio.jpg");
+  background-image: url("/images/project-dothis.jpg");
 }
 
 .plataform-photo{
@@ -507,9 +506,9 @@ hr{
   
   #box-presentation{
     height: auto;
-    background: #FFF;
+    background: #151515;
     grid-column-start: 2;
-    border: solid #f0f0f0 2px;
+    border: solid #242424 2px;
     border-radius: 15px;
     display: grid;
     grid-template-columns: 90%;
@@ -524,7 +523,7 @@ hr{
     margin: 15px;
     height: 87.5%;
     border-radius: 10px;
-    background: #F5F5F7;
+    background: #5a5a5a;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -545,7 +544,6 @@ hr{
   
   #info-presentation{
     padding: 5%;
-    background: #FFF;
   }
   
   #info-presentation *{
@@ -564,9 +562,9 @@ hr{
   }
   
   #presentation-icons div{
-    background: #F5F5F7;
+    background: #151515;
     margin: 5px;
-    border: solid #f0f0f0 2px;
+    border: solid #242424 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -584,7 +582,6 @@ hr{
   }
   
   .projects-container{
-    background-color: #FFF;
     display: grid;
     grid-template-columns: 100%;
     padding-top: 5%;
@@ -603,7 +600,7 @@ hr{
   
   #projects div{
     height: 3.2rem;
-    border: solid #F5F5F7 2px;
+    border: solid #5a5a5a 2px;
     margin-top: 15px;
     border-radius: 8px;
     transition: 0.4s;
@@ -632,15 +629,15 @@ hr{
   }
   
   #bp-photo{
-    background-image: url("/images/project-bp.jpg");
+    background-image: url("/images/project-sushi.jpg");
   }
   
   #dt-photo{
-    background-image: url("/images/project-dothis.jpg");
+    background-image: url("/images/project-comunidade.jpg");
   }
   
   #pt-photo{
-    background-image: url("/images/project-portfolio.jpg");
+    background-image: url("/images/project-dothis.jpg");
   }
   
   .plataform-photo{
@@ -744,9 +741,8 @@ hr{
   
   .events{
     height: 300px;
-    background: #FFF;
     margin: 15px;
-    border: solid #f0f0f0 2px;
+    border: solid #5a5a5a 2px;
     border-radius: 10px;
     padding: 20px;
     transition: 0.6s;
@@ -805,13 +801,12 @@ hr{
   }
 
   .contact-items{
-    background: #FFF;
     width: 60px;
     height: 60px;
     display: grid;
     justify-content: center;
     align-items: center;
-    border: solid #f0f0f0 2px;
+    border: solid #5a5a5a 2px;
     border-radius: 8px;
   }
 
@@ -928,4 +923,25 @@ input:checked + .slider:before {
   color: rgb(105, 79, 255);
   max-width: 150px;
   border-radius: 15px;
+}
+
+.repository-text{
+  display:inline-block;
+  border: solid #5a5a5a 2px;
+  padding: 1rem .8rem 1rem .8rem;
+  border-radius: 15px;
+  transition: .4s;
+  cursor: pointer;
+  margin-top: 0 !important; 
+}
+
+.repository-text:hover{
+  color: rgb(105, 79, 255);
+  border: solid rgb(105, 79, 255) 2px;
+}
+
+.access-project{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
